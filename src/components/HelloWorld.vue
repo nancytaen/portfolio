@@ -1,7 +1,9 @@
 <template>
     <div class="h2 mb-0">
+      ABC
     <b-icon-arrow-up></b-icon-arrow-up>
     <b-icon-exclamation-triangle-fill></b-icon-exclamation-triangle-fill>
+    <router-link to="/layout">Layout</router-link>
   </div>
 </template>
 
