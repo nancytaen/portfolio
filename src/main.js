@@ -12,7 +12,6 @@ Vue.use(IconsPlugin)
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-
 // vue router
 import VueRouter from 'vue-router'
 import Routes from './routes.js'
