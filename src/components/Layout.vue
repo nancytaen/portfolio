@@ -4,6 +4,93 @@
     <b-icon-arrow-up></b-icon-arrow-up>
     <b-icon-exclamation-triangle-fill></b-icon-exclamation-triangle-fill>
     <router-link to="/layout">Layout</router-link>
+    <section id ="about">
+      about <br>
+      about <br>
+      about <br>
+      about <br>
+      about <br>
+      about <br>
+      about <br>
+      about <br>
+      about <br>
+      about <br>
+      about <br>
+      about <br>
+      about <br>
+      about <br>
+      about <br>
+      about <br>
+      about <br>
+      about <br>
+      about <br>
+      about <br>
+      about <br>
+      about <br>
+      about <br>
+      about <br>
+      about <br>
+      
+    </section>
+    <section id ="projects">
+      projects <br>
+      projects <br>
+      projects <br>
+      projects <br>
+      projects <br>
+      projects <br>
+      projects <br>
+      projects <br>
+      projects <br>
+      projects <br>
+      projects <br>
+      projects <br>
+      projects <br>
+      projects <br>
+      projects <br>
+      projects <br>
+      projects <br>
+      projects <br>
+      projects <br>
+      projects <br>
+      projects <br>
+      projects <br>
+      projects <br>
+      projects <br>
+      
+    </section>
+    <section id ="contact">
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      contact <br>
+      
+    </section>
   </div>
 </template>
 
