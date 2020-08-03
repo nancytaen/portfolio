@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+
     <!-- navigation header -->
     <!-- TODO: add scroll animation -->
     <div>
@@ -15,6 +16,7 @@
       </b-navbar>
     </div>
 
+    <!-- Content -->
     <router-view></router-view>
 
     <!-- footer -->
@@ -44,6 +46,7 @@
       </div>
     </footer>
     </div>
+
   </div>
 </template>
 
