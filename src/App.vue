@@ -21,7 +21,7 @@
 
     <!-- footer -->
     <div>
-    <footer>
+    <footer class="bg-light">
       <div>
         <div class="footer-title"> CONTACT </div>
         <font-awesome-icon icon="phone" /> 
