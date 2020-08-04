@@ -21,30 +21,30 @@
 
     <!-- footer -->
     <div>
-    <footer class="bg-light">
-      <div>
-        <div class="footer-title"> CONTACT </div>
-        <font-awesome-icon icon="phone" /> 
-        (+1) 437-970-4730 <br>
-        <a class="btn btn-light btn-social"  href="mailto:nancyduot.li@mail.utoronto.ca">
-          <font-awesome-icon icon="envelope" />  
-        </a> 
-        nancyduot.li@mail.utoronto.ca <br>
-        <font-awesome-icon icon="map-marker" /> 7 Grenville St. Toronto, ON, Canada
-      </div>
-      <div>
-        <div class="footer-title"> LINKS </div>
-        <a class="btn btn-light btn-social" href="https://github.com/nancytaen" target="_blank">
-          <font-awesome-icon :icon="['fab', 'github']" />
-        </a>
-        <a class="btn btn-light btn-social" href="https://ca.linkedin.com/in/nancy-li-557106181" target="_blank">
-          <font-awesome-icon :icon="['fab', 'linkedin']" />
-        </a>
-        <a class="btn btn-light btn-social" href="https://www.facebook.com/NancyTaenLi" target="_blank">
-          <font-awesome-icon :icon="['fab', 'facebook']" />
-        </a>
-      </div>
-    </footer>
+      <footer class="bg-light">
+        <div>
+          <div class="footer-title"> CONTACT </div>
+          <font-awesome-icon icon="phone" /> 
+          (+1) 437-970-4730 <br>
+          <a class="btn btn-light btn-social"  href="mailto:nancyduot.li@mail.utoronto.ca">
+            <font-awesome-icon icon="envelope" />  
+          </a> 
+          nancyduot.li@mail.utoronto.ca <br>
+          <font-awesome-icon icon="map-marker" /> 7 Grenville St. Toronto, ON, Canada
+        </div>
+        <div>
+          <div class="footer-title"> LINKS </div>
+          <a class="btn btn-light btn-social" href="https://github.com/nancytaen" target="_blank">
+            <font-awesome-icon :icon="['fab', 'github']" />
+          </a>
+          <a class="btn btn-light btn-social" href="https://ca.linkedin.com/in/nancy-li-557106181" target="_blank">
+            <font-awesome-icon :icon="['fab', 'linkedin']" />
+          </a>
+          <a class="btn btn-light btn-social" href="https://www.facebook.com/NancyTaenLi" target="_blank">
+            <font-awesome-icon :icon="['fab', 'facebook']" />
+          </a>
+        </div>
+      </footer>
     </div>
 
   </div>
