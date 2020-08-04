@@ -4,7 +4,7 @@
     <!-- navigation header -->
     <!-- TODO: add scroll animation -->
     <div>
-      <b-navbar toggleable="sm" type="light" variant="light">
+      <b-navbar toggleable="sm" type="light" variant="light" fixed="top">
         <b-navbar-brand href="/">Home</b-navbar-brand>
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 

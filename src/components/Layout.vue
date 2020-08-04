@@ -1,9 +1,5 @@
 <template>
-    <div>
-        LAYOUT HERE
-    <b-icon-arrow-up></b-icon-arrow-up>
-    <b-icon-exclamation-triangle-fill></b-icon-exclamation-triangle-fill>
-    <router-link to="/layout">Layout</router-link>
+  <div>
 
     <section id ="about">
       <About />
@@ -16,6 +12,7 @@
     <section id ="contact">
       <Contact />  
     </section>
+    
   </div>
 </template>
 
