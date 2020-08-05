@@ -2,10 +2,9 @@
   <div id="app">
 
     <!-- navigation header -->
-    <!-- TODO: add scroll animation -->
     <div>
       <b-navbar toggleable="sm" type="light" variant="light" fixed="top">
-        <b-navbar-brand href="/">Home</b-navbar-brand>
+        <b-navbar-brand href="#top">Home</b-navbar-brand>
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
         <b-collapse id="nav-collapse" is-nav>
@@ -17,7 +16,7 @@
     </div>
 
     <!-- Content -->
-    <router-view></router-view>
+    <Layout></Layout>
 
     <!-- footer -->
     <div>
@@ -51,14 +50,17 @@
 </template>
 
 <script>
+import Layout from './components/Layout.vue'
+
 export default {
   name: 'App',
+  components: { Layout },
   data: function() {
     return {
       navLinks: [
-        {name: 'About', url: '/#about'},
-        {name: 'Projects', url: '/#projects'},
-        {name: 'Contact', url: '/#contact'}
+        {name: 'About', url: '#about'},
+        {name: 'Projects', url: '#projects'},
+        {name: 'Contact', url: '#contact'}
       ]
     }
   }
@@ -66,6 +68,10 @@ export default {
 </script>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -20,16 +20,7 @@ Vue.use(IconsPlugin)
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-// vue router
-import VueRouter from 'vue-router'
-import Routes from './routes.js'
-Vue.use(VueRouter)
-const router = new VueRouter({
-  routes: Routes
-})
-
 
 new Vue({
-  render: h => h(App),
-  router
+  render: h => h(App)
 }).$mount('#app')
