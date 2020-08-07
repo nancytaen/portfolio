@@ -1,5 +1,5 @@
 <template>
-    <div class="about-me">
+    <div class="about-me container-sm">
       <div>
         <!-- header & image -->
       <h1>

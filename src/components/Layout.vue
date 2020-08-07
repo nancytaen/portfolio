@@ -1,18 +1,17 @@
 <template>
   <div>
-LAYOUT
-    <section id ="about">
+    <br>
+    <section id ="about" class="mt-5">
       <About />
     </section>
 
-    <section id ="projects">
+    <section id ="projects" class="mt-5">
       <Projects />
     </section>
 
-    <section id ="contact">
+    <section id ="contact" class="mt-5">
       <Contact />  
     </section>
-
   </div>
 </template>
 
