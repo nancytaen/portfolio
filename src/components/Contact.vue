@@ -1,6 +1,5 @@
 <template>
-    <div>
-Contact!!
+  <div class="container-sm">
   </div>
 </template>
 

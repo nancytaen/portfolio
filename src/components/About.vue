@@ -2,9 +2,6 @@
     <div class="about-me container-sm">
       <div>
         <!-- header & image -->
-      <h1>
-        Nancy Li
-      </h1>
       <b-img src="img/profile.jpg" rounded="circle" fluid alt="Picture of Nancy"/>
       <div class="about-me-body">
         <!-- first body paragraph -->

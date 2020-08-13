@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <h1> Projects </h1>
     <b-card-group deck>
       <b-card style="min-width:300px; margin-bottom: 10px;" v-for="(project, idx) in projects" :key="idx" 
       :title="project.name"
@@ -8,11 +7,11 @@
           <b-card-text>{{project.description}}</b-card-text>
           <div>
             <b-button id="show-btn" @click="$bvModal.show('pModal' + idx)">More</b-button>
-            <b-modal :id="'pModal' + idx" hide-footer>
+            <b-modal :id="'pModal' + idx" :title="project.name" hide-footer centered>
               {{project.name}}
               {{project.description}}
               {{project.languages}}
-              <b-button class="mt-3" block @click="$bvModal.hide('pModal0')">Close</b-button>
+              <b-button class="mt-3" block @click="$bvModal.hide('pModal' + idx)">Close</b-button>
             </b-modal>
           </div>
       </b-card>

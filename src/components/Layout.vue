@@ -1,15 +1,22 @@
 <template>
   <div>
-    <br>
-    <section id ="about" class="mt-5">
+    <section id ="about">
+      <h1 class="pt-5">About Me</h1>
       <About />
     </section>
 
-    <section id ="projects" class="mt-5">
+    <section id="experience">
+      <h1 class="pt-5">Experience</h1>
+      <Experience />
+    </section>
+
+    <section id ="projects">
+      <h1 class="pt-5">Projects</h1>
       <Projects />
     </section>
 
-    <section id ="contact" class="mt-5">
+    <section id ="contact">
+      <h1 class="pt-5">Contact</h1>
       <Contact />  
     </section>
   </div>
@@ -17,6 +24,7 @@
 
 <script>
 import About from './About.vue'
+import Experience from './Experience.vue'
 import Projects from './Projects.vue'
 import Contact from './Contact.vue'
 
@@ -25,6 +33,6 @@ export default {
   props: {
     msg: String
   },
-  components: { About, Projects, Contact }
+  components: { About, Experience, Projects, Contact }
 }
 </script>
