@@ -3,7 +3,7 @@
     <b-card-group deck>
       <b-card style="min-width:300px; margin-bottom: 10px;" v-for="(project, idx) in projects" :key="idx" 
       :title="project.name"
-      :img-src="project.img" :alt="'Picture of ' + project.name" img-top>
+      :img-src="project.img" alt="" img-top>
           <b-card-text>{{project.description}}</b-card-text>
           <div>
             <b-button id="show-btn" @click="$bvModal.show('pModal' + idx)">More</b-button>

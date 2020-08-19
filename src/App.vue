@@ -22,7 +22,7 @@
     <div>
       <footer class="bg-light">
         <div>
-          <div class="footer-title"> CONTACT </div>
+          <div><strong>CONTACT</strong></div>
           <font-awesome-icon icon="phone" /> 
           (+1) 437-970-4730 <br>
           <a class="btn btn-light btn-social"  href="mailto:nancyduot.li@mail.utoronto.ca">
@@ -32,7 +32,7 @@
           <font-awesome-icon icon="map-marker" /> 7 Grenville St. Toronto, ON, Canada
         </div>
         <div>
-          <div class="footer-title"> LINKS </div>
+          <div><strong>LINKS</strong></div>
           <a class="btn btn-light btn-social" href="https://github.com/nancytaen" target="_blank">
             <font-awesome-icon :icon="['fab', 'github']" />
           </a>

@@ -22,13 +22,22 @@
           </div>
           <div>
             <br>
-          <!-- download resume -->
-          My resume can be found <a href="file/NancyLi_Resume.pdf" target="_blank"> here</a>. <br>
-          Feel free to reach out to me for detailed CV or official/unofficial transcript.
+            <!-- download resume -->
+            My resume can be found <a href="file/NancyLi_Resume.pdf" target="_blank"> here</a>. <br>
+            Feel free to reach out to me for detailed CV or official/unofficial transcript.
+          </div>
+          <div>
+            <h2>Skills</h2>
+            Python (Flask)
+            C++
+            C
+            JavaScript (VueJS, jQuery)
+            ARM, Verilog, DE1-SOC
+
           </div>
         </div>
       </div>
-  </div>
+    </div>
 </template>
 
 <script>
