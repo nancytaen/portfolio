@@ -13,8 +13,9 @@
               <ul>
                 <li v-for="point in project.details" :key="point">{{point}}</li>
               </ul>
-              <p> <strong>Algorithms:</strong> {{project.algorithms}} </p>
+              <p v-if="project.algorithms"> <strong>Algorithms:</strong> {{project.algorithms}} </p>
               <p> <strong>Languages:</strong> {{project.languages}} </p>
+              <p v-if="project.code"> <strong>Code:</strong> {{project.code}} </p>
               <p v-if="project.tip"> STAR: {{project.tip}} </p>
               <b-button class="mt-3" block @click="$bvModal.hide('pModal' + idx)">Close</b-button>
             </b-modal>
@@ -39,26 +40,35 @@ export default {
         algorithms: 'Binary tree and min-max algorithm',
         tip: '', 
         languages: 'Python', code: ''},
-        { name: 'Project2', img: '/img1', 
+
+        { name: 'City Map', img: '/img1', 
+        description: 'A city map using Open Streets API',
+        details: ['A school project in a group of 3', 'Used Open Streets API and EZGL/ to display graphics of different cities',
+        'Showed restaurants and implemented search feature using Yelp API', "Found shortest route between two points on the map and displayed directions",
+        "Found an optimized solution to Travelling Sales Man Problem, and ranked 19th in a class of 100 teams"], 
+        algorithms: "Dijkstra's/A* algorith, STL vector, map, unordered_map, priority queue",
+        languages: 'C++', code: 'Due to academic reasons, the code cannot be publicized. It can be shown upon request.'},
+        
+        { name: '3x3 sliding puzzle', img: '/img1', 
+        description: 'A sliding puzzle game that can be played on DE1-SOC computer',
+        details: ['A sliding puzzle game', 'VGA to display graphics', 'PS2-keyboard to slide tiles', 
+        'Timer and HEX display to show the current status', 'A final project for hardware class, in a group of 2'], 
+        languages: 'C (using C to ARM compiler)', code: ''},
+        
+        { name: 'Petimage', img: '/img1', 
         description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
         details: [], 
         languages: '', code: ''},
-        { name: 'Project3', img: '/img1', 
+        
+        { name: 'Citation Machine', img: '/img1', 
         description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
         details: [], 
         languages: '', code: ''},
-        { name: 'Project4', img: '/img1', 
-        description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-        details: [], 
-        languages: '', code: ''},
-        { name: 'Project5', img: '/img1', 
-        description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-        details: [], 
-        languages: '', code: ''},
-        { name: 'Project6', img: '/img1', 
-        description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-        details: [], 
-        languages: '', code: ''}
+        
+        // { name: 'Project6', img: '/img1', 
+        // description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
+        // details: [], 
+        // languages: '', code: ''}
       ]
     }
   }
