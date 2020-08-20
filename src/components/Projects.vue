@@ -45,7 +45,7 @@ export default {
 
         { name: 'City Map', img: '/img1', 
         description: 'A city map using Open Streets API',
-        date: 'January - April 2020',
+        date: 'Jan 2020 - April 2020',
         details: ['A school project in a group of 3', 'Used Open Streets API and EZGL/ to display graphics of different cities',
         'Showed restaurants and implemented search feature using Yelp API', "Found shortest route between two points on the map and displayed directions",
         "Found an optimized solution to Travelling Sales Man Problem, and ranked 19th in a class of 100 teams"], 
