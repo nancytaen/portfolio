@@ -1,5 +1,13 @@
 <template>
   <div>
+    <section>
+      <div style="padding-top: 350px; padding-bottom: 50px;">
+        <blockquote class="blockquote container-sm text-left">
+          <p><em>A backend/full stack engineer interested in web development and machine learning</em></p>
+        </blockquote>
+      </div>
+    </section>
+
     <section id ="about">
       <h1 class="pt-5">About Me</h1>
       <About />

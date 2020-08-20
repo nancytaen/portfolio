@@ -5,6 +5,7 @@
       :title="project.name"
       :img-src="project.img" alt="" img-top>
           <b-card-text>{{project.description}}</b-card-text>
+          <b-card-text><small>{{project.date}}</small></b-card-text>
           <div>
             <b-button id="show-btn" @click="$bvModal.show('pModal' + idx)">More</b-button>
             <b-modal :id="'pModal' + idx" :title="project.name" hide-footer centered>
@@ -36,6 +37,7 @@ export default {
       projects: [
         { name: 'Chess', img: '/img1', 
         description: "Chess game and AI Chess player",
+        date: 'March 2019',
         details: ['An AI chess player', 'People can play chess against it through the terminal'],
         algorithms: 'Binary tree and min-max algorithm',
         tip: '', 
@@ -43,6 +45,7 @@ export default {
 
         { name: 'City Map', img: '/img1', 
         description: 'A city map using Open Streets API',
+        date: 'January - April 2020',
         details: ['A school project in a group of 3', 'Used Open Streets API and EZGL/ to display graphics of different cities',
         'Showed restaurants and implemented search feature using Yelp API', "Found shortest route between two points on the map and displayed directions",
         "Found an optimized solution to Travelling Sales Man Problem, and ranked 19th in a class of 100 teams"], 
@@ -51,16 +54,19 @@ export default {
         
         { name: '3x3 sliding puzzle', img: '/img1', 
         description: 'A sliding puzzle game that can be played on DE1-SOC computer',
+        date: 'April 2020',
         details: ['A sliding puzzle game', 'VGA to display graphics', 'PS2-keyboard to slide tiles', 
         'Timer and HEX display to show the current status', 'A final project for hardware class, in a group of 2'], 
         languages: 'C (using C to ARM compiler)', code: ''},
         
         { name: 'Petimage', img: '/img1', 
+        date: 'April-June 2020',
         description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
         details: [], 
         languages: '', code: ''},
         
-        { name: 'Citation Machine', img: '/img1', 
+        { name: 'Citation Machine', img: '/img1',
+        date: 'July 2020', 
         description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
         details: [], 
         languages: '', code: ''},
