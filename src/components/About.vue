@@ -3,6 +3,7 @@
       <div>
           <!-- header & image -->
         <b-img src="img/profile.jpg" rounded="circle" fluid alt="Picture of Nancy"/>
+        
         <div class="about-me-body">
           <div class="container-sm">
             <br>
@@ -20,19 +21,22 @@
             to applying these knowledge in software development, such as in machine learning and financial engineering. I want to use my skills and knowledge 
             to build software that can fill <em>the gap</em> in people's lives. 
           </div>
+
           <div>
             <br>
             <!-- download resume -->
             My resume can be found <a href="file/NancyLi_Resume.pdf" target="_blank"> here</a>. <br>
             Feel free to reach out to me for detailed CV or official/unofficial transcript.
           </div>
+
           <div class="mt-4">
             <h3>Skills</h3>
-            Python (Flask)
-            C++
-            C
-            JavaScript (VueJS, jQuery)
-            ARM, Verilog, DE1-SOC
+            <div v-for="(skill, idx) in skills" :key="idx">
+              <h4>{{skill.title}}</h4>
+              <ul class="list-unstyled">
+                <li v-for="skill in skill.skills" :key="skill"> {{skill.name}} </li>
+              </ul>
+            </div>
 
           </div>
         </div>
@@ -45,6 +49,23 @@ export default {
   name: 'About',
   props: {
     msg: String
+  },
+  data: function() {
+    return {
+      skills: [{title: 'Programming', skills: [
+        {name: 'Python', },
+        {name: 'C++'},
+        {name: 'C'},
+        {name: 'JavaScript'},
+        {name: 'HTML/CSS'}
+      ]}, {title: 'Hardware', skills: [
+        {name: 'ARM'},
+        {name: 'Verilog'},
+      ]}, {title: 'System', skills: [
+        {name: 'MYSQL'},
+        {name: 'AWS'}
+      ]}]
+    }
   }
 }
 </script>
