@@ -1,21 +1,19 @@
 <template>
-  <div class="container">
-    <b-card-group deck>
-      <b-card style="min-width:300px; margin-bottom: 10px;" v-for="(project, idx) in projects" :key="idx" 
+  <div class="container container-fluid content-row">
+    <div class="row">
+      <b-card class="mb-3 col-sm-10 col-lg-4" v-for="(project, idx) in projects" :key="idx" 
       :title="project.name"
       :img-src="project.img" alt="" img-top>
           <b-card-text>{{project.description}}</b-card-text>
           <b-card-text><small>{{project.date}}</small></b-card-text>
 
-
-          AA
-          <div class="row">
-          <span v-for="icon in project.icons" :key="icon">
-            <font-awesome-icon :icon="icon" />
-          </span>
-          </div>
-          BB
-
+          <template v-slot:footer>
+            <div class="row ml-2b">
+              <span class="mr-1" v-for="icon in project.icons" :key="icon">
+                <font-awesome-icon :icon="icon" />
+              </span>
+            </div>
+          </template>
 
           <div>
             <b-button id="show-btn" @click="$bvModal.show('pModal' + idx)">More</b-button>
@@ -32,13 +30,14 @@
               <b-button class="mt-3" block @click="$bvModal.hide('pModal' + idx)">Close</b-button>
             </b-modal>
           </div>
+
       </b-card>
-    </b-card-group>
+    </div>
   </div>
 </template>
 
 <script>
-import { faPython, faHtml5, faBootstrap, faCuttlefish} from '@fortawesome/free-brands-svg-icons'
+import { faPython, faHtml5, faBootstrap, faCuttlefish, faAws, faJs, faYelp} from '@fortawesome/free-brands-svg-icons'
 export default {
   name: 'Projects',
   props: {
@@ -58,7 +57,7 @@ export default {
 
         { name: 'City Map', img: '/img1', 
         description: 'A city map using Open Streets API',
-        icons: [faCuttlefish],
+        icons: [faCuttlefish, faYelp],
         date: 'Jan 2020 - April 2020',
         details: ['A school project in a group of 3', 'Used Open Streets API and EZGL/ to display graphics of different cities',
         'Showed restaurants and implemented search feature using Yelp API', "Found shortest route between two points on the map and displayed directions",
@@ -68,7 +67,7 @@ export default {
         
         { name: '3x3 sliding puzzle', img: '/img1', 
         description: 'A sliding puzzle game that can be played on DE1-SOC computer',
-        icons: [],
+        icons: [faCuttlefish],
         date: 'April 2020',
         details: ['A sliding puzzle game', 'VGA to display graphics', 'PS2-keyboard to slide tiles', 
         'Timer and HEX display to show the current status', 'A final project for hardware class, in a group of 2'], 
@@ -76,7 +75,7 @@ export default {
         
         { name: 'Petimage', img: '/img1', 
         date: 'April-June 2020',
-        icons: [faPython, faHtml5, faBootstrap],
+        icons: [faPython, faHtml5, faBootstrap, faJs, faAws],
         description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
         details: [], 
         languages: '', code: ''},
@@ -84,7 +83,7 @@ export default {
         { name: 'Citation Machine', img: '/img1',
         date: 'July 2020', 
         description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-        icons: [faPython],
+        icons: [faPython, faHtml5],
         details: [], 
         languages: '', code: ''},
         
