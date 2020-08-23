@@ -33,9 +33,16 @@
             <h3>Skills</h3>
             <div v-for="(skill, idx) in skills" :key="idx">
               <h4>{{skill.title}}</h4>
-              <ul class="list-unstyled">
-                <li v-for="skill in skill.skills" :key="skill"> {{skill.name}} </li>
-              </ul>
+              <div>
+                <b-card-group deck>
+                  <b-card v-for="(skill, idx) in skill.skills" :key="idx"
+                    border-variant="warning" :header="skill.name"
+                    header-bg-variant="transparent"
+                    align="center">
+                  </b-card>
+                </b-card-group>
+
+              </div>
             </div>
 
           </div>
