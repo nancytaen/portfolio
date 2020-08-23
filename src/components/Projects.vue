@@ -6,6 +6,16 @@
       :img-src="project.img" alt="" img-top>
           <b-card-text>{{project.description}}</b-card-text>
           <b-card-text><small>{{project.date}}</small></b-card-text>
+
+
+          AA
+          <div class="row" v-for="icon in project.icons" :key="icon">
+            <span v-html="icon"></span>
+          </div>
+          <span><font-awesome-icon :icon="['fab', 'python']" /></span>
+          BB
+
+
           <div>
             <b-button id="show-btn" @click="$bvModal.show('pModal' + idx)">More</b-button>
             <b-modal :id="'pModal' + idx" :title="project.name" hide-footer centered>
@@ -37,6 +47,7 @@ export default {
       projects: [
         { name: 'Chess', img: '/img1', 
         description: "Chess game and AI Chess player",
+        icons: [],
         date: 'March 2019',
         details: ['An AI chess player', 'People can play chess against it through the terminal'],
         algorithms: 'Binary tree and min-max algorithm',
