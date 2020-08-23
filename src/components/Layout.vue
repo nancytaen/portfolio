@@ -1,11 +1,10 @@
 <template>
   <div>
     <section>
-      <div style="padding-top: 350px; padding-bottom: 50px;">
-        <blockquote class="blockquote container-sm text-left">
-          <p><em>A backend/full stack engineer interested in web development and machine learning</em></p>
-        </blockquote>
-      </div>
+      <b-card overlay class="mt-5" img-src="img/header.jpg"
+       title="Hello! I'm Nancy Li">
+       <em>A Backend & Full Stack Engineer interested in web development and machine learning </em>
+      </b-card>
     </section>
 
     <section id ="about">
