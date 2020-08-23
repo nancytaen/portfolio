@@ -9,10 +9,11 @@
 
 
           AA
-          <div class="row" v-for="icon in project.icons" :key="icon">
-            <span v-html="icon"></span>
+          <div class="row">
+          <span v-for="icon in project.icons" :key="icon">
+            <font-awesome-icon :icon="icon" />
+          </span>
           </div>
-          <span><font-awesome-icon :icon="['fab', 'python']" /></span>
           BB
 
 
@@ -37,6 +38,7 @@
 </template>
 
 <script>
+import { faPython, faHtml5, faBootstrap, faCuttlefish} from '@fortawesome/free-brands-svg-icons'
 export default {
   name: 'Projects',
   props: {
@@ -47,7 +49,7 @@ export default {
       projects: [
         { name: 'Chess', img: '/img1', 
         description: "Chess game and AI Chess player",
-        icons: [],
+        icons: [faPython],
         date: 'March 2019',
         details: ['An AI chess player', 'People can play chess against it through the terminal'],
         algorithms: 'Binary tree and min-max algorithm',
@@ -56,6 +58,7 @@ export default {
 
         { name: 'City Map', img: '/img1', 
         description: 'A city map using Open Streets API',
+        icons: [faCuttlefish],
         date: 'Jan 2020 - April 2020',
         details: ['A school project in a group of 3', 'Used Open Streets API and EZGL/ to display graphics of different cities',
         'Showed restaurants and implemented search feature using Yelp API', "Found shortest route between two points on the map and displayed directions",
@@ -65,6 +68,7 @@ export default {
         
         { name: '3x3 sliding puzzle', img: '/img1', 
         description: 'A sliding puzzle game that can be played on DE1-SOC computer',
+        icons: [],
         date: 'April 2020',
         details: ['A sliding puzzle game', 'VGA to display graphics', 'PS2-keyboard to slide tiles', 
         'Timer and HEX display to show the current status', 'A final project for hardware class, in a group of 2'], 
@@ -72,6 +76,7 @@ export default {
         
         { name: 'Petimage', img: '/img1', 
         date: 'April-June 2020',
+        icons: [faPython, faHtml5, faBootstrap],
         description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
         details: [], 
         languages: '', code: ''},
@@ -79,6 +84,7 @@ export default {
         { name: 'Citation Machine', img: '/img1',
         date: 'July 2020', 
         description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
+        icons: [faPython],
         details: [], 
         languages: '', code: ''},
         
