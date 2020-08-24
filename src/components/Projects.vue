@@ -1,7 +1,7 @@
 <template>
-  <div class="container container-fluid content-row">
-    <div class="row">
-      <b-card class="mb-3 col-sm-10 col-lg-4" v-for="(project, idx) in projects" :key="idx" 
+  <div class="container container-fluid content-row mt-4">
+    <div class="row justify-content-center">
+      <b-card class="mb-3 mr-3 col-sm-10 col-lg-4 pr-0 pl-0" v-for="(project, idx) in projects" :key="idx" 
       :title="project.name"
       :img-src="project.img" alt="" img-top>
           <b-card-text>{{project.description}}</b-card-text>

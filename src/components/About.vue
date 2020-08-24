@@ -1,5 +1,5 @@
 <template>
-    <div class="about-me container-sm">
+    <div class="about-me container-sm mt-4">
       <div>
           <!-- header & image -->
         <b-img src="img/profile.jpg" rounded="circle" fluid alt="Picture of Nancy"/>
@@ -29,14 +29,14 @@
             Feel free to reach out to me for detailed CV or official/unofficial transcript.
           </div>
 
-          <div class="mt-4">
+          <div class="mt-5">
             <h3>Skills</h3>
             <div class="mt-2 mb-4">
               <h4>Programming</h4>
               <div class="container-fluid">
                 <div class="row justify-content-center">
                   <b-card v-for="(skill, idx) in skills.program" :key="idx"
-                    class="col-lg-2 col-sm-4 mr-2 mb-2 pr-0 pl-0"
+                    class="col-lg-2 col-sm-4 mr-3 mb-3 pr-0 pl-0"
                     border-variant="warning" :header="skill.name"
                     header-bg-variant="transparent"
                     align="center">
@@ -55,7 +55,7 @@
               <div class="container">
                 <div class="row justify-content-center">
                   <b-card v-for="(skill, idx) in skills.hardware" :key="idx"
-                    class="col-lg-2 col-sm-4 mr-2 mb-2 pr-0 pl-0"
+                    class="col-lg-2 col-sm-4 mr-3 mb-3 pr-0 pl-0"
                     border-variant="success" :header="skill.name"
                     header-bg-variant="transparent"
                     align="center">
@@ -74,7 +74,7 @@
               <div class="container">
                 <div class="row justify-content-center">
                   <b-card v-for="(skill, idx) in skills.system" :key="idx"
-                    class="col-lg-2 col-sm-4 mr-2 mb-2 pr-0 pl-0"
+                    class="col-lg-2 col-sm-4 mr-3 mb-3 pr-0 pl-0"
                     border-variant="info" :header="skill.name"
                     header-bg-variant="transparent"
                     align="center">
