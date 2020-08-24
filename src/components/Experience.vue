@@ -2,7 +2,8 @@
     <div>
         <div class="mt-4 mb-5">
             <h3>Work Experience</h3>
-            <b-card v-for="job in jobs" :key="job.title" :title="job.title" class="col-sm-9 mx-auto text-left mb-2">
+            <b-card v-for="job in jobs" :key="job.title" :title="job.title" 
+              class="col-sm-9 col-lg-8 mx-auto text-left mb-2">
                 <ul class="list-inline">
                     <li class="list-inline-item"> {{job.company}} |</li> 
                     <li class="list-inline-item"> {{job.date}} |</li>
@@ -16,7 +17,8 @@
 
         <div>
             <h3>Entrepreneurial Experience</h3>
-            <b-card v-for="entrep in entreps" :key="entrep.name" :title="entrep.name" class="col-sm-9 mx-auto text-left mb-2">
+            <b-card v-for="entrep in entreps" :key="entrep.name" :title="entrep.name" 
+              class="col-sm-9 col-lg-8 mx-auto text-left mb-2">
                 <ul class="list-inline">
                     <li class="list-inline-item"> {{entrep.project}} |</li>
                     <li class="list-inline-item"> {{entrep.date}} |</li>

@@ -4,7 +4,7 @@
     <!-- navigation header -->
     <div>
       <b-navbar toggleable="sm" type="light" variant="light" fixed="top">
-        <b-navbar-brand href="#top">Home</b-navbar-brand>
+        <b-navbar-brand href="#top">Top</b-navbar-brand>
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
         <b-collapse id="nav-collapse" is-nav>
@@ -59,6 +59,7 @@ export default {
     return {
       navLinks: [
         {name: 'About', url: '#about'},
+        {name: 'Skills', url:'#skills'},
         {name: 'Experience', url: '#experience'},
         {name: 'Projects', url: '#projects'},
         {name: 'Contact', url: '#contact'}
