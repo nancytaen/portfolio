@@ -1,14 +1,13 @@
 <template>
   <div class="container container-fluid content-row mt-4">
     <div class="row justify-content-center">
+    
       <b-card class="mb-3 mr-3 col-sm-10 col-lg-4 pr-0 pl-0" v-for="(project, idx) in projects" :key="idx" 
-      :title="project.name"
-      :img-src="project.img" alt="" img-top>
+      :title="project.name" :img-src="project.img" alt="" img-top>
           <b-card-text>{{project.description}}</b-card-text>
           <b-card-text><small>{{project.date}}</small></b-card-text>
-
           <template v-slot:footer>
-            <div class="row ml-2b">
+            <div class="row float-right">
               <span class="mr-1" v-for="icon in project.icons" :key="icon">
                 <font-awesome-icon :icon="icon" />
               </span>
@@ -18,20 +17,34 @@
           <div>
             <b-button id="show-btn" @click="$bvModal.show('pModal' + idx)">More</b-button>
             <b-modal :id="'pModal' + idx" :title="project.name" hide-footer centered>
-              <b-img :src="project.img" alt="" fluid />
-              <p class="h4"> {{project.name}} <p>
-              <ul>
-                <li v-for="point in project.details" :key="point">{{point}}</li>
-              </ul>
-              <p v-if="project.algorithms"> <strong>Algorithms:</strong> {{project.algorithms}} </p>
-              <p> <strong>Languages:</strong> {{project.languages}} </p>
-              <p v-if="project.code"> <strong>Code:</strong> {{project.code}} </p>
-              <p v-if="project.tip"> STAR: {{project.tip}} </p>
+              <b-tabs content-class="mt-3">
+
+                <!-- First Tab: Description -->
+                <b-tab title="About" active>
+                  <b-img :src="project.img" alt="" fluid />
+                  <p><strong>Description</strong></p>
+                  <ul>
+                    <li v-for="point in project.details" :key="point">{{point}}</li>
+                  </ul>
+                  <p v-if="project.algorithms"> <strong>Algorithms:</strong> {{project.algorithms}} </p>
+                  <p> <strong>Languages:</strong> {{project.languages}} </p>
+                  <p v-if="project.code"> <strong>Code:</strong> {{project.code}} </p>
+                  <p v-if="project.tip"> STAR: {{project.tip}} </p>
+                </b-tab>
+
+                <!-- Second Tab: Video/Source Code/Link -->
+                <b-tab title="Demo">
+                  This is Demo!
+                </b-tab>
+
+              </b-tabs>
+
               <b-button class="mt-3" block @click="$bvModal.hide('pModal' + idx)">Close</b-button>
             </b-modal>
           </div>
-
+          
       </b-card>
+      
     </div>
   </div>
 </template>
