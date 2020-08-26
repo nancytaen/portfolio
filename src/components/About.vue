@@ -8,7 +8,7 @@
           <div class="container-sm">
             <br>
 
-            <p class="lead"> Hello! My name is Nancy Li.</p> 
+            <p class="lead-text"> Hello! My name is Nancy Li.</p> 
             I am a <strong> 3rd year Computer Engineering </strong> student studying at University of Toronto. 
             My passion lies in <u> computer software, hardware, and mathematics</u>. I am especially interested in software development, 
             including <u> web development and machine learning</u>. I enjoy exploring new algorithms and technologies, and am constantly looking for 
@@ -21,15 +21,8 @@
             to applying these knowledge in software development, such as in machine learning and financial engineering. I want to use my skills and knowledge 
             to build software that can fill <em>the gap</em> in people's lives. 
           </div>
-
-          <div>
-            <br>
-            <!-- download resume -->
-            My resume can be found <a href="file/NancyLi_Resume.pdf" target="_blank"> here</a>. <br>
-            Feel free to reach out to me for detailed CV or official/unofficial transcript.
-          </div>
-
         </div>
+        
       </div>
     </div>
 </template>
@@ -42,3 +35,13 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+  .lead-text {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  .about-me-body {
+    font-size: 1.15rem;
+  }
+</style>

@@ -9,6 +9,13 @@
     </p>
     (437)971-4730
     nancyduot.li@mail.utoronto.ca
+
+              <div>
+            <br>
+            <!-- download resume -->
+            My resume can be found <a href="file/NancyLi_Resume.pdf" target="_blank"> here</a>. <br>
+            Feel free to reach out to me for detailed CV or official/unofficial transcript.
+          </div>
   </div>
 </template>
 
