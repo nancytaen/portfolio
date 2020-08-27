@@ -22,7 +22,7 @@
             to build software that can fill <em>the gap</em> in people's lives. 
           </div>
         </div>
-        
+
       </div>
     </div>
 </template>
@@ -42,6 +42,6 @@ export default {
     font-weight: 500;
   }
   .about-me-body {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
 </style>
