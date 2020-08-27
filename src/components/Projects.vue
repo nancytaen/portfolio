@@ -28,13 +28,16 @@
                   </ul>
                   <p v-if="project.algorithms"> <strong>Algorithms:</strong> {{project.algorithms}} </p>
                   <p> <strong>Languages:</strong> {{project.languages}} </p>
-                  <p v-if="project.code"> <strong>Code:</strong> {{project.code}} </p>
-                  <p v-if="project.tip"> STAR: {{project.tip}} </p>
+                  <p v-if="project.tip"> <font-awesome-icon icon="star" /> {{project.tip}} </p>
                 </b-tab>
 
                 <!-- Second Tab: Video/Source Code/Link -->
                 <b-tab title="Demo">
                   This is Demo!
+                  <div>
+                    <a v-if="project.code" :href="project.code"><b>Source Code Link</b></a>
+                    <p v-else>*** {{ project.codeMes }}</p>
+                  </div>
                 </b-tab>
 
               </b-tabs>
@@ -59,16 +62,16 @@ export default {
   data: function() {
     return {
       projects: [
-        { name: 'Chess', img: '/img1', 
+        { name: 'Chess', img: '/img/projects/chess.jpg', 
         description: "Chess game and AI Chess player",
         icons: [faPython],
         date: 'March 2019',
         details: ['An AI chess player', 'People can play chess against it through the terminal'],
         algorithms: 'Binary tree and min-max algorithm',
         tip: '', 
-        languages: 'Python', code: ''},
+        languages: 'Python', code: 'https://github.com/nancytaen/Chess'},
 
-        { name: 'City Map', img: '/img1', 
+        { name: 'City Map', img: '/img/projects/citymap.png', 
         description: 'A city map using Open Streets API',
         icons: [faCuttlefish, faYelp],
         date: 'Jan 2020 - April 2020',
@@ -76,9 +79,9 @@ export default {
         'Showed restaurants and implemented search feature using Yelp API', "Found shortest route between two points on the map and displayed directions",
         "Found an optimized solution to Travelling Sales Man Problem, and ranked 19th in a class of 100 teams"], 
         algorithms: "Dijkstra's/A* algorith, STL vector, map, unordered_map, priority queue",
-        languages: 'C++', code: 'Due to academic reasons, the code cannot be publicized. It can be shown upon request.'},
+        languages: 'C++: STL, libCurl: Yelp API, GTK', code: '', codeMes: 'Due to academic reasons, the code cannot be publicized. Please reach out to me for the source code.'},
         
-        { name: '3x3 sliding puzzle', img: '/img1', 
+        { name: '15 Puzzle Game (Hardware)', img: '/img/projects/slidepuzzle.png', 
         description: 'A sliding puzzle game that can be played on DE1-SOC computer',
         icons: [faCuttlefish],
         date: 'April 2020',
@@ -86,19 +89,25 @@ export default {
         'Timer and HEX display to show the current status', 'A final project for hardware class, in a group of 2'], 
         languages: 'C (using C to ARM compiler)', code: ''},
         
-        { name: 'Petimage', img: '/img1', 
-        date: 'April-June 2020',
+        { name: 'Petimage', img: '', 
+        date: 'April 2020 -',
         icons: [faPython, faHtml5, faBootstrap, faJs, faAws],
-        description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-        details: [], 
-        languages: '', code: ''},
+        description: 'An instagram-like site where users share pictures of their pets',
+        details: ['Users create accounts, then upload and post pictures', 'Users can follow other users', 
+        'Users can like and comment other posts'], 
+        tip: 'Designed the Relational Database models', 
+        languages: 'Python: Flask, Sqlalchemy (MYSQL), alembic Jinja, HTML, Bootstrap, AWS: EC2, S3',
+        code: 'https://github.com/nancytaen/petimage'},
         
-        { name: 'Citation Machine', img: '/img1',
+        { name: 'Citation Machine', img: '/img/projects/citation.png',
         date: 'July 2020', 
-        description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
+        description: 'A citation machine that generates IEEE citations given URLs',
         icons: [faPython, faHtml5],
-        details: [], 
-        languages: '', code: ''},
+        details: ['Takes a list of URLs in editor or .txt file and generates IEEE Reference page', 'Uses Newspaper3k to retrieve article data', 
+        'Output IEEE reference in editor or .txt file'
+        ], 
+        tip: 'Used multithreading (ThreadPoolExecutor) to increase the speed',
+        languages: 'Python: Flask, Jinja, Newspaper3k', code: 'https://github.com/nancytaen/citation'},
         
         // { name: 'Project6', img: '/img1', 
         // description: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
