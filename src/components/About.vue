@@ -21,6 +21,12 @@
             to applying these knowledge in software development, such as in machine learning and financial engineering. I want to use my skills and knowledge 
             to build software that can fill <em>the gap</em> in people's lives. 
           </div>
+          <br><br>
+          <div>
+           <!-- download resume -->
+            <a class="btn btn-outline-secondary" href="file/NancyLi_Resume.pdf" target="_blank">Resume</a><br>
+            Feel free to reach out to me for official/unofficial transcript!
+          </div>
         </div>
 
       </div>

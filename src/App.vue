@@ -33,7 +33,7 @@
         </div>
         <div>
           <div><strong>LINKS</strong></div>
-          <a class="btn btn-light btn-social" href="https://github.com/nancytaen" target="_blank">
+          <a class="btn btn-outline-secondary btn-social" href="https://github.com/nancytaen" target="_blank">
             <font-awesome-icon :icon="['fab', 'github']" />
           </a>
           <a class="btn btn-light btn-social" href="https://ca.linkedin.com/in/nancy-li-557106181" target="_blank">
