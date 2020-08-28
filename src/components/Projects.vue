@@ -29,10 +29,14 @@
                   <p v-if="project.algorithms"> <strong>Algorithms:</strong> {{project.algorithms}} </p>
                   <p> <strong>Languages:</strong> {{project.languages}} </p>
                   <p v-if="project.tip"> <font-awesome-icon icon="star" /> {{project.tip}} </p>
+                  <div>
+                    <a v-if="project.code" :href="project.code" target="_blank"><b>Source Code Link</b></a>
+                    <p v-else>*** {{ project.codeMes }} ***</p>
+                  </div>
                 </b-tab>
 
-                <!-- Second Tab: Video/Source Code/Link -->
-                <b-tab title="Source">
+                <!-- Second Tab: Slide Show -->
+                <b-tab title="Pictures">
                   <!-- Carousel -->
                   <div>
                     <b-carousel
@@ -53,15 +57,10 @@
                         :img-src="imgG.img">
                       </b-carousel-slide>
                     </b-carousel>
-                  </div>
-
-                  <div>
-                    <a v-if="project.code" :href="project.code"><b>Source Code Link</b></a>
-                    <p v-else>*** {{ project.codeMes }} ***</p>
-                  </div>
-                  
+                  </div>  
                 </b-tab>
 
+                <!-- Third Tab: Video -->
                 <b-tab v-if="project.video" title="Video">
                   <div>
                     <b-embed type="iframe" aspect="16by9"
@@ -118,7 +117,7 @@ export default {
         date: 'April 2020',
         details: ['A sliding puzzle game', 'VGA to display graphics', 'PS2-keyboard to slide tiles', 
         'Timer and HEX display to show the current status', 'A final project for hardware class, in a group of 2'], 
-        languages: 'C (using C to ARM compiler)', code: ''},
+        languages: 'C (using C to ARM compiler)', code: 'https://github.com/ruqhia/15-game-puzzle'},
         
         { name: 'Petimage', img: '', 
         date: 'April 2020 -',
