@@ -32,11 +32,40 @@
                 </b-tab>
 
                 <!-- Second Tab: Video/Source Code/Link -->
-                <b-tab title="Demo">
-                  This is Demo!
+                <b-tab title="Source">
+                  <!-- Carousel -->
+                  <div>
+                    <b-carousel
+                      :id="'carousel' + project.name"
+                      v-model="slide"
+                      :interval="3000"
+                      controls
+                      indicators
+                      img-width="1024"
+                      img-height="480"
+                      style="text-shadow: 1px 1px 2px #333;"
+                      @sliding-start="onSlideStart"
+                      @sliding-end="onSlideEnd">
+                      <!-- Text slides with image -->
+                      <b-carousel-slide v-for="(imgG, idx) in project.carsPic" :key="idx"
+                        :caption="imgG.caption"
+                        :text="imgG.text"
+                        :img-src="imgG.img">
+                      </b-carousel-slide>
+                    </b-carousel>
+                  </div>
+
                   <div>
                     <a v-if="project.code" :href="project.code"><b>Source Code Link</b></a>
-                    <p v-else>*** {{ project.codeMes }}</p>
+                    <p v-else>*** {{ project.codeMes }} ***</p>
+                  </div>
+                  
+                </b-tab>
+
+                <b-tab v-if="project.video" title="Video">
+                  <div>
+                    <b-embed type="iframe" aspect="16by9"
+                    :src="project.video" allowfullscreen />
                   </div>
                 </b-tab>
 
@@ -68,7 +97,9 @@ export default {
         date: 'March 2019',
         details: ['An AI chess player', 'People can play chess against it through the terminal'],
         algorithms: 'Binary tree and min-max algorithm',
-        tip: '', 
+        carsPic: [{img: 'img/projects/chess.jpg', caption: 'Chess Game', text: 'chess game image'},
+                  {img: 'img/projects/citymap.png', caption: 'ha'}],
+        video: 'http://www.youtube.com/embed/W7qWa52k-nE',
         languages: 'Python', code: 'https://github.com/nancytaen/Chess'},
 
         { name: 'City Map', img: '/img/projects/citymap.png', 
