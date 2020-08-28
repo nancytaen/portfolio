@@ -18,33 +18,18 @@
     <!-- Content -->
     <Layout></Layout>
 
+
+
     <!-- footer -->
-    <div>
-      <footer class="bg-light">
-        <div>
-          <div><strong>CONTACT</strong></div>
-          <font-awesome-icon icon="phone" /> 
-          (+1) 437-970-4730 <br>
-          <a class="btn btn-light btn-social"  href="mailto:nancyduot.li@mail.utoronto.ca">
-            <font-awesome-icon icon="envelope" />  
-          </a> 
-          nancyduot.li@mail.utoronto.ca <br>
-          <font-awesome-icon icon="map-marker" /> 7 Grenville St. Toronto, ON, Canada
-        </div>
-        <div>
-          <div><strong>LINKS</strong></div>
-          <a class="btn btn-outline-secondary btn-social" href="https://github.com/nancytaen" target="_blank">
-            <font-awesome-icon :icon="['fab', 'github']" />
-          </a>
-          <a class="btn btn-light btn-social" href="https://ca.linkedin.com/in/nancy-li-557106181" target="_blank">
-            <font-awesome-icon :icon="['fab', 'linkedin']" />
-          </a>
-          <a class="btn btn-light btn-social" href="https://www.facebook.com/NancyTaenLi" target="_blank">
-            <font-awesome-icon :icon="['fab', 'facebook']" />
-          </a>
-        </div>
-      </footer>
-    </div>
+    <footer class="bg-light">
+      <div class="container-footer">
+      <span class="container align-middle">
+        Created by Nancy Li <br>
+        © Nancy Li's Portfolio Site 2020. All rights reserved.
+      </span>
+      </div>
+    </footer>
+
 
   </div>
 </template>
@@ -80,5 +65,12 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+.container-footer {
+  height: 150px; 
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
 }
 </style>

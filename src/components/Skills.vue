@@ -7,7 +7,7 @@
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <b-card v-for="(skill, idx) in skills.program" :key="idx"
-                    class="col-lg-2 col-sm-3 mr-3 mb-3 pr-0 pl-0"
+                    class="col-lg-2 col-sm-3 col-4 mr-3 mb-3 pr-0 pl-0"
                     border-variant="warning" :header="skill.name"
                     header-bg-variant="transparent"
                     align="center">
@@ -28,7 +28,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <b-card v-for="(skill, idx) in skills.system" :key="idx"
-                    class="col-lg-2 col-sm-4 mr-3 mb-3 pr-0 pl-0"
+                    class="col-lg-2 col-sm-4 col-4 mr-3 mb-3 pr-0 pl-0"
                     border-variant="info" :header="skill.name"
                     header-bg-variant="transparent"
                     align="center">
@@ -49,7 +49,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <b-card v-for="(skill, idx) in skills.hardware" :key="idx"
-                    class="col-lg-4 col-sm-8 mr-3 mb-3 pr-0 pl-0"
+                    class="col-lg-4 col-sm-8 col-8 mr-3 mb-3 pr-0 pl-0"
                     border-variant="success" :header="skill.name"
                     header-bg-variant="transparent"
                     align="center">

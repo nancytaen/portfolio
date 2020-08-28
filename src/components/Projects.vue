@@ -2,7 +2,7 @@
   <div class="container container-fluid content-row mt-4">
     <div class="row justify-content-center">
     
-      <b-card class="mb-3 mr-3 col-sm-10 col-lg-3 pr-0 pl-0" v-for="(project, idx) in projects" :key="idx" 
+      <b-card class="mb-3 mr-3 col-sm-9 col-8 col-lg-3 pr-0 pl-0" v-for="(project, idx) in projects" :key="idx" 
       :title="project.name" :img-src="project.img" alt="" img-top>
           <b-card-text>{{project.description}}</b-card-text>
           <b-card-text><small>{{project.date}}</small></b-card-text>

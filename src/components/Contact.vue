@@ -1,7 +1,7 @@
 <template>
-  <div class="container-sm card bg-light text-left mt-4 col-lg-6 col-md-9">
+  <div class="container-sm card bg-light text-left mt-4 col-lg-6 col-md-9 col-11">
     <p class="mt-2 mx-auto"><strong>Feel free to contact me for more information!</strong></p>
-    <div class=" col-sm-8 col-lg-6 mx-auto">
+    <div class=" col-sm-8 col-lg-6 col-10 mx-auto">
       
       <!-- education -->
       <div class="mt-2 mb-3">
