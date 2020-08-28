@@ -9,7 +9,7 @@
           <template v-slot:footer>
             <div class="row float-right">
               <span class="mr-1" v-for="icon in project.icons" :key="icon">
-                <font-awesome-icon :icon="icon" />
+                <font-awesome-icon :icon="icon" size="2x" />
               </span>
             </div>
           </template>
