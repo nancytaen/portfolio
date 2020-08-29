@@ -112,7 +112,7 @@ export default {
   data: function() {
     return {
       projects: [
-        { name: 'Chess', img: '/img/projects/chess.jpg', 
+        { name: 'Chess', img: 'img/projects/chess.jpg', 
         description: "Chess game and AI Chess player",
         icons: [faPython],
         date: 'March 2019',
@@ -121,7 +121,7 @@ export default {
         carsPic: [{img: 'img/projects/chess.jpg', caption: 'Chess Game', text: 'chess game image'}],
         languages: 'Python', code: 'https://github.com/nancytaen/Chess'},
 
-        { name: 'City Map', img: '/img/projects/citymap.png', 
+        { name: 'City Map', img: 'img/projects/citymap.png', 
         description: 'A city map using Open Streets API',
         icons: [faCuttlefish, faYelp],
         date: 'Jan 2020 - April 2020',
@@ -140,7 +140,7 @@ export default {
         ],
         video: 'https://www.youtube.com/embed/Y7ijMc9G978'},
         
-        { name: '15 Puzzle Game (Hardware)', img: '/img/projects/slidepuzzle.png', 
+        { name: '15 Puzzle Game (Hardware)', img: 'img/projects/slidepuzzle.png', 
         description: 'A sliding puzzle game that can be played on DE1-SOC computer',
         icons: [faCuttlefish],
         date: 'April 2020',
@@ -169,7 +169,7 @@ export default {
         ],
         video: 'https://www.youtube.com/embed/T25OFsE5dY4'},
         
-        { name: 'Citation Machine', img: '/img/projects/citation.png',
+        { name: 'Citation Machine', img: 'img/projects/citation.png',
         date: 'July 2020', 
         description: 'A citation machine that generates IEEE citations given URLs',
         icons: [faPython, faHtml5],

@@ -83,8 +83,8 @@ export default {
       ], hardware: [
           {name: 'Verilog HDL / ARM', exps: ['1 year learning'], img:'img/logos/fpga.png'},
       ], system: [
-          {name: 'MYSQL', exps: ['4 months intern'], img:'/img/logos/mysql.png'},
-          {name: 'AWS', exps: ['3 months learning'], img:'/img/logos/aws.jpg'}
+          {name: 'MYSQL', exps: ['4 months intern'], img:'img/logos/mysql.png'},
+          {name: 'AWS', exps: ['3 months learning'], img:'img/logos/aws.jpg'}
       ]}
     }
   }
