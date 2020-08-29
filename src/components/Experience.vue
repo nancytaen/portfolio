@@ -19,6 +19,7 @@
         <div>
             <h3>Entrepreneurial Experience</h3>
             <b-card v-for="entrep in entreps" :key="entrep.name" 
+              :img-src="entrep.img" img-right
               class="col-sm-9 col-lg-8 col-11 mx-auto text-left mb-2">
                 <b-card-title>
                     <a :href="entrep.url" target="_blank" class="text-dark mr-3">{{entrep.name}}</a>
@@ -56,7 +57,7 @@ export default {
                 ],
             entreps: [
                 {name: 'MoneyPong', position: 'Co-Founder/ Developer', project: 'U of T Hatchery', date: 'Sept 2019 - June 2020',
-                 location: 'Toronto, ON, Canada',
+                 location: 'Toronto, ON, Canada', img: 'img/logos/moneypong.png',
                  details: ['A team of 5 University of Toronto students',
                  'A pong game with integration of crypto currency',
                  'Built member login and signup pages using jQuery and NodeJS',
@@ -64,7 +65,7 @@ export default {
                  projUrl: 'https://hatchery.engineering.utoronto.ca/',
                  url: 'http://moneypong.herokuapp.com/'},
                 {name: 'Givt', position: 'Co-Founder', project: 'U of T Hatchery', date: 'June 2020 - present', 
-                 location: 'Toronto, ON, Canada',
+                 location: 'Toronto, ON, Canada', img: 'img/logos/givt.png',
                  details: ['A pivot of MoneyPong in the Hatchery Program',
                  'A system where users can split the cost of a gift',
                  'Formulated ideas, conducted research, and prepared for pitches to investors'
